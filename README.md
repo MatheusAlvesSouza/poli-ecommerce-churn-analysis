@@ -48,4 +48,22 @@ Certifique-se de ter o **Anaconda** ou **Miniconda** instalado no seu sistema.
 1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/SEU-USUARIO/ecommerce-churn-analysis.git](https://github.com/SEU-USUARIO/ecommerce-churn-analysis.git)
-   cd ecommerce-churn-analysis
+
+2. **Abra o terminal na pasta do projeto:**
+   Navegue até o diretório onde o repositório foi clonado (garantindo que você consegue ver os arquivos `analise_churn.ipynb` e a pasta `data/`).
+
+3. **Instale o Jupyter Notebook (se necessário):**
+   Caso utilize uma versão limpa do Miniconda e ainda não possua o ambiente do Jupyter instalado no seu computador, rode o comando abaixo:
+   ```bash
+   conda install -c conda-forge notebook
+
+4. **Inicie o servidor do Jupyter:**
+   No mesmo terminal (garantindo que você está dentro da pasta do projeto), execute o comando abaixo para abrir a interface no seu navegador:
+   ```bash
+   jupyter notebook
+
+5. **Com a interface do Jupyter aberta:**
+   Na interface do Jupyter que se abriu no navegador, clique para abrir o arquivo ECommerceAnalysis.ipynb. Com o notebook aberto, execute as células sequencialmente utilizando Shift + Enter. O Passo 0 do próprio notebook     cuidará de instalar as dependências de análise caso alguma esteja faltando no seu computador. Se não abrir a interface diretamente e estiver tudo certo no terminal abra a url abaixo no navegador:
+   ```bash
+   http://localhost:8888/tree
+   
