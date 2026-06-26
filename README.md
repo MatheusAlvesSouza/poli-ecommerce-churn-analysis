@@ -27,13 +27,14 @@ Empresas de e-commerce e telecomunicações geram volumes massivos de dados diar
 
 ## 🛠️ Estrutura do Notebook (`.ipynb`)
 
-O código foi desenvolvido de forma modular e **inteligente**, pensado para que qualquer pessoa consiga rodar sem complicações de ambiente. O fluxo está dividido em:
+O código foi desenvolvido de forma modular e inteligente, integrado com documentação em Markdown para facilitar a interpretação dos resultados. O fluxo de engenharia e análise de dados está dividido em:
 
-* **Passo 0: Autogestão de Dependências:** Um bloco dinâmico que verifica se as bibliotecas necessárias estão instaladas no ambiente e efetua o download automático das que estiverem faltando.
-* **Passo 1: Carregamento de Dados:** Leitura e estruturação automatizada do arquivo `dataset.csv` com Pandas.
-* **Passo 2: Relatório Estatístico:** Consolidação de métricas clássicas em uma única tabela descritiva (Média, Mediana, Moda, Percentis 25/50/75, Mínimo, Máximo, Intervalo, Desvio Padrão, Covariância e Correlação com o Churn).
-* **Passo 3: Distribuição Visual (Boxplot):** Gráficos que demonstram visualmente a dispersão, comportamento central e identificação de anomalias (*outliers*).
-* **Passo 4: Cruzamento com Regras de Negócio:** Análise segmentada dividindo o comportamento de usuários que cancelaram versus usuários ativos.
+* **Passo 0 e 1: Verificação de Ferramentas e Carregamento:** Um bloco dinâmico que valida o ambiente local, instala bibliotecas ausentes automaticamente e realiza a leitura estruturada do arquivo `dataset.csv` com Pandas.
+* **Passo 2: Tratamento de Valores Ausentes (Data Cleaning):** Etapa essencial de qualidade de dados que identifica registros nulos (*NaN*) no atributo `HourSpendOnApp` e os preenche utilizando a mediana da coluna, evitando distorções nas análises.
+* **Passo 3: Relatório Estatístico Descritivo:** Consolidação das métricas clássicas em uma única tabela analítica (Média, Mediana, Moda, Percentis 25/50/75, Mínimo, Máximo, Intervalo, Desvio Padrão, Covariância e Correlação com a variável alvo).
+* **Passo 4: Matriz de Correlação Visual (Heatmap):** Geração de um Mapa de Calor interativo para avaliar de forma rápida a força e a direção da associação linear entre as variáveis comportamentais e o Churn.
+* **Passo 5: Distribuição Visual (Boxplot):** Gráficos de caixa para mapear o comportamento central da massa de usuários, limites operacionais e detecção de anomalias (*outliers*).
+* **Passo 6: Cruzamento com Regras de Negócio:** Análise segmentada dividindo visualmente os boxplots entre o grupo de clientes ativos versus clientes que cancelaram o serviço (Churn).
 
 ---
 
